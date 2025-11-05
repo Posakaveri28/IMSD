@@ -1,0 +1,3 @@
+  username: <input type="text"/><br>
+        Password: <input type="password/"><br>
+        Phone number: <input type="text"/>

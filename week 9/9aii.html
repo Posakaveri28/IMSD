@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function fibonacci()
+            {
+                var n=parseInt(promt("enter the value"));
+                var a=0,b=1,next;
+                 var series = "";
+                for(var i = 1; i <= n; i++)
+                {
+                    series += a + " ";
+                    next = a + b;
+                    a = b;
+                    b = next;
+                }
+                document.write("Fibonacci series " + series);
+            }
+            
+        </script>
+    </head>
+    <body onload="fibonacci();">
+        
+    </body>
+</html>

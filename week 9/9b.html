@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script>
+        function factorial() {
+            var n = parseInt(document.getElementById("num").value);
+            var ans = 1;
+            for (var i = 1; i <= n; i++) {
+                ans *= i;
+            }
+            document.write("Factorial of " + n + " is: " + ans);
+        }
+
+        function fibonacci() {
+            var n = parseInt(document.getElementById("num").value);
+            var a = 0, b = 1, next;
+            var series = "";
+            for (var i = 1; i <= n; i++) {
+                series += a + " ";
+                next = a + b;
+                a = b;
+                b = next;
+            }
+            document.write("Fibonacci series : " + series);
+        }
+    </script>
+</head>
+<body>
+    <h2>Factorial and Fibonacci Calculator</h2>
+    Enter a Number: <input type="text" id="num"><br><br>
+    <input type="button" value="Factorial" onclick="factorial()">
+    <input type="button" value="Fibonacci" onclick="fibonacci()">
+</body>
+</html>

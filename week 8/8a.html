@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            var a = parseInt(prompt("Enter the first number"));
+            var b = parseInt(prompt("Enter the second number"));
+            var c = parseInt(prompt("Enter the third number"));
+            var result;
+
+            if (a == b && b == c)
+            {
+                result = "Equal Numbers";
+            }
+            else if (a >= b && a >= c)
+            {
+                result = a + " is bigger";
+            }
+            else if (b >= a && b >= c)
+            {
+                result = b + " is bigger";
+            }
+            else 
+            {
+                result = c + " is bigger";
+            }
+
+            alert(result);
+        </script>
+    </body>
+</html>

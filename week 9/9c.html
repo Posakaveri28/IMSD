@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            function check() {
+                var name = document.getElementById("name").value;
+                var mobile = document.getElementById("mobile").value;
+                var email = document.getElementById("email").value;
+
+                if (!(name.length >= 6 && ((name[0] >= 'A' && name[0] <= 'Z') || (name[0] >= 'a' && name[0] <= 'z')))) {
+                    alert("❌ Invalid Name");
+                    return false;
+                }
+
+                if (!(mobile.length == 10 && !isNaN(mobile))) {
+                    alert("❌ Invalid Mobile please enter 10 digits");
+                    return false;
+                }
+
+                if (!(email.indexOf("@") > 0 && email.indexOf(".") > email.indexOf("@"))) {
+                    alert("❌ Invalid email entered!!");
+                    return false;
+                }
+
+                document.write("Details Verified!");
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <h2><marquee direction="left"></marquee>Login Page</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text" id="name"><br><br>
+            <label>Mobile Number:</label>
+            <input type="text" id="mobile"><br><br>
+            <label>Email:</label>
+            <input type="text" id="email"><br><br>
+            <button type="button" onclick="check()">check</button>
+            </center>
+            
+        </form>
+    </body>
+</html>

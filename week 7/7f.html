@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <script>
+            var str = "Hello 123, Welcome to 2025!";
+            var regex = /\d+/g;
+
+            document.write("test(): " + regex.test(str) + "<br>");
+            document.write("exec(): " + regex.exec(str) + "<br>");
+            document.write("source: " + regex.source + "<br>");
+            document.write("flags: " + regex.flags + "<br>");
+            document.write("global: " + regex.global + "<br>");
+            document.write("search(): " + str.search(/\d+/) + "<br>");
+            document.write("replace(): " + str.replace(/\d+/g, '#') + "<br>");
+            document.write("split(): " + str.split(/\s+/) + "<br>");
+            document.write("toString(): " + regex.toString() + "<br>");
+        </script>
+    </body>
+</html>

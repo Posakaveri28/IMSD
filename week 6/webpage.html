@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+           function check()
+           { var username=document.getElementById ("user").value;
+            var user2=document.getElementById ("user2").value;
+            if(username=="Pranav" && user2==12345)
+        {
+            document.write("welcome to the webpage");
+        }
+        else{
+            document.write("invalid login");
+        }
+    }
+        </script>
+    </head>
+    <body>
+        <center>
+        Username:<input type="text" id="user">
+        Password:<input type="password" id="user2">
+        <input type="button" value="login" onclick="check();">
+        </center>
+    </body>
+</html>
+

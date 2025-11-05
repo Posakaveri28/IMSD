@@ -1,0 +1,71 @@
+<!-- <html>
+    <head>
+        <script>
+            function Addition()
+            {
+               var username=parseInt(document.getElementById ("user").value);
+               var user2=parseInt(document.getElementById ("user2").value);
+               document.write(username+user2);
+            }
+            function substract()
+            {
+               var username=parseInt(document.getElementById ("user").value);
+               var user2=parseInt(document.getElementById ("user2").value);
+               document.write(username-user2);
+            }
+            function multiply()
+            { 
+               var username=parseInt(document.getElementById ("user").value);
+               var user2=parseInt(document.getElementById ("user2").value);
+               document.write(username*user2);
+
+            }
+            function divide()
+            {
+               var username=parseInt(document.getElementById ("user").value);
+               var user2=parseInt(document.getElementById ("user2").value);
+               document.write(username/user2);
+            }
+        </script>
+    </head>
+    <body>
+      <center>
+        <table border="2">
+
+        
+        <tr>Number 1:<input type="text" id="user"></tr><br><br>
+        <tr>Number 2:<input type="text" id="user2"> </tr>
+        <br>
+        <br>
+        <td><input type="button" value="Add" onclick="Addition();"></td>   
+        <td><input type="button" value="substract" onclick="substract();"></td>
+        <td><input type="button" value="multiply" onclick="multiply();"></td>
+         <td><input type="button" value="divide" onclick="divide();"></td>
+</table>
+    </body>
+</html> -->
+
+
+
+<html>
+   <head>
+      <script>
+         function show()
+         {
+            var a=parseInt(window.prompt("enter a value"));
+            document.write("original number  :"+ a);
+            var rev=0;
+              while (a > 0)
+              {
+                var digit=a%10;
+                rev=(rev*10)+digit;
+                a=a/10
+              }
+              document.write(rev);
+         }
+
+      </script>
+   </head>
+   <body onload="show();">
+   </body>
+</html>
